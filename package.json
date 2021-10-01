@@ -5,11 +5,8 @@
   "type": "module",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "postbuild": "cd client && npm install",
-    "client-build":"cd client && npm run build",
-    "heroku-postbuild":"npm run postbuild && npm run client-build"
+    "start": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
